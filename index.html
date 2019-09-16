@@ -4,24 +4,39 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Extra Practice</title>
+        <script src="script.js"></script>
+        <style>
+        body {
+          animation: colorchange 1s; /* animation-name followed by duration in seconds*/
+             /* you could also use milliseconds (ms) or something like 2.5s */
+          -webkit-animation: colorchange 1s; /* Chrome and Safari */
+        }
+
+        @keyframes colorchange
+        {
+          0%   {background: yellow;}
+          25%  {background: green;}
+          50%  {background: yellow;}
+          75%  {background: orange;}
+          100% {background: red;}
+        }
+
+        @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+        {
+          0%   {background: yellow;}
+          25%  {background: green;}
+          50%  {background: yellow;}
+          75%  {background: orange;}
+          100% {background: red;}
+        }
+
+          a {text-decoration: none;}
+          a:hover { text-decoration: underline;}
+        </style>
     </head>
-    <body style="background-color: grey;">
-      <h1>Extra Practice</h1>
-      <p>
-        <ul>
-          <li>
-            Benjamin Earl
-          </li>
-          <li>
-            Emma Verhoeven
-          </li>
-          <li>
-            Gijs de Boer
-          </li>
-        </ul>
-      </p>
-      <p>
-        <a href="www.instagram.com/extrapractice">www.instagram.com/extrapractice</a>
-        </p>
+    <body onLoad="typeWriter()" style="width:100vw;">
+      <div id="container">
+          <h1 style='overflow-wrap: break-word;'><a href="www.instagram.com/extrapractice">E<span id="demo"></span>xtra Practice</a></h1>
+        </div>
     </body>
 </html>
