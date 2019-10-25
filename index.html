@@ -5,38 +5,16 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Extra Practice</title>
         <script src="script.js"></script>
-        <style>
-        body {
-          animation: colorchange 50s; /* animation-name followed by duration in seconds*/
-             /* you could also use milliseconds (ms) or something like 2.5s */
-          -webkit-animation: colorchange 50s; /* Chrome and Safari */
-        }
-
-        @keyframes colorchange
-        {
-          0%   {background: yellow;}
-          25%  {background: green;}
-          50%  {background: yellow;}
-          75%  {background: orange;}
-          100% {background: red;}
-        }
-
-        @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-        {
-          0%   {background: red;}
-          25%  {background: yellow;}
-          50%  {background: orange;}
-          75%  {background: green;}
-          100% {background: red;}
-        }
-
-          a {text-decoration: none;}
-          a:hover { text-decoration: underline;}
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body onLoad="typeWriter()" style="width:100vw;">
+    <body>
       <div id="container">
-          <h1 style='overflow-wrap: break-word;'><a href="https://www.instagram.com/extrapractice/">E<span id="demo"></span>xtra Practice</a></h1>
+        <p>
+          Extra Practice is an experiment in working and learning together.
+        </p>
+        <a href="https://www.instagram.com/extrapractice/">Instagram</a> /
+        <a href="https://www.are.na/extra-practice">Are.na</a> /
+        <a href="mailto:extrapracticeinbox@gmail.com">Email</a>
         </div>
     </body>
 </html>
